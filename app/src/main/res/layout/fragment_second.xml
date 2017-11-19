@@ -5,23 +5,80 @@
     android:orientation="vertical">
 
     <TextView
-        android:textColor="@color/colorPrimaryDark"
         android:id="@+id/titleTextViewSecondFragment"
-        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_margin="@dimen/margin"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin"
         android:text="@string/second_title"
-        android:textStyle="bold"
-        android:textSize="@dimen/h2" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold" />
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_margin"
+        android:layout_marginRight="@dimen/my_margin"
+        android:orientation="vertical"
+        android:padding="@dimen/margin">
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="0dp" />
+        <!--USD To THB-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date = "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold" />
+
+        <!--Rate-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate = "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold" />
+
+        <!--Textfield of USD-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="USD..."
+                android:inputType="number"
+                android:textSize="@dimen/h2" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Exchanged"
+                android:textSize="@dimen/h3" />
+        </LinearLayout>
+
+        <!--Show answer-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/my_margin"
+            android:text="Answer"
+            android:textColor="#123456"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 </LinearLayout>
