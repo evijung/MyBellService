@@ -26,9 +26,10 @@
         <!--USD To THB-->
 
         <TextView
+            android:id="@+id/txtDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date = "
+            android:text="@string/date"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/h2"
             android:textStyle="bold" />
@@ -36,9 +37,10 @@
         <!--Rate-->
 
         <TextView
+            android:id="@+id/txtRate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rate = "
+            android:text="@string/rate"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/h2"
             android:textStyle="bold" />
@@ -51,30 +53,33 @@
             android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/edtUSD"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:hint="USD..."
+                android:hint="@string/usd"
                 android:inputType="number"
                 android:textSize="@dimen/h2" />
 
             <Button
+                android:id="@+id/btnExchanged"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:text="Exchanged"
+                android:text="@string/exchanged"
                 android:textSize="@dimen/h3" />
         </LinearLayout>
 
         <!--Show answer-->
 
         <TextView
+            android:id="@+id/txtAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/my_margin"
-            android:text="Answer"
+            android:text="@string/answer"
             android:textColor="#123456"
             android:textSize="@dimen/h1"
             android:textStyle="bold" />
